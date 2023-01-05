@@ -1,16 +1,16 @@
-// CommonJS, every file 
-// Modules - Encapsultated Code (only share minimum)
-
-const names = require('./4-names');
-const sayHi = require('./5-utils');
-const data = require('./6-alternative flavour')
-require('./7-mind-grenade')
-
-// sayHi('susan')
-// sayHi(names.john)
-// sayHi(names.peter)
-
-// sayHi(data.per)
+const path = require('path')
 
 
-// console.log(data)
+console.log(path.sep)
+
+
+const filePath = path.join('/content/', 'subfoler', 'test.txt')
+
+console.log(filePath)
+
+const base = path.basename(filePath)
+console.log(base)
+
+const absolute = path.resolve(__dirname, 'content','subfolder','test.txt')
+console.log(absolute)
+
